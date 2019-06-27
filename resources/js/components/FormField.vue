@@ -169,6 +169,13 @@ export default {
             this.linkUrl = attrs.href;
             this.linkMenuIsActive = true;
         },
+        /**
+         * Fill the given FormData object with the field's internal value.
+         */
+        fill(formData) {
+            debugger;
+            formData.append(this.field.attribute, JSON.parse(this.value) || "");
+        },
 
         hideLinkMenu() {
             this.linkUrl = null;
