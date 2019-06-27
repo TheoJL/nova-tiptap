@@ -146,8 +146,8 @@ export default {
             // set the value each time editor is updated
             let outsideScope = this;
             this.editor.setOptions({
-                onUpdate: function (state) {
-                    outsideScope.value = state.getHTML();
+                onUpdate: function(state) {
+                    outsideScope.value = state.getJSON();
                 }
             });
 
