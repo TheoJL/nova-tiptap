@@ -36,22 +36,22 @@
 </template>
 
 <script>
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { library } from "@fortawesome/fontawesome-svg-core";
 
-import { faCode, faListUl, faListOl, faQuoteRight } from '@fortawesome/pro-regular-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import {
+    faFileCode,
+    faListAlt,
+    faCommentDots
+} from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faCode, faListUl, faListOl, faQuoteRight)
-
+library.add(faFileCode, faListAlt, faListAlt, faCommentDots);
 
 export default {
-    props: ['buttonKey', 'isActive', 'commands'],
+    props: ["buttonKey", "isActive", "commands"],
 
     components: {
-        FontAwesomeIcon,
-    },
-}
+        FontAwesomeIcon
+    }
+};
 </script>
-
-
-

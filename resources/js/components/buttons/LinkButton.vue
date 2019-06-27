@@ -82,21 +82,25 @@
 <script>
 import { library } from '@fortawesome/fontawesome-svg-core'
 
-import { faLink, faUnlink, faTimesCircle } from '@fortawesome/pro-regular-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import {
+    faPaperPlane,
+    faSadTear,
+    faTimesCircle
+} from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faLink, faUnlink, faTimesCircle)
+library.add(faPaperPlane, faSadTear, faTimesCircle);
 
 export default {
     props: [
-        'getMarkAttrs',
-        'linkMenuIsActive',
-        'isActive',
-        'commands',
-        'linkUrl',
-        'hideLinkMenu',
-        'showLinkMenu',
-        'setLinkUrl',
+        "getMarkAttrs",
+        "linkMenuIsActive",
+        "isActive",
+        "commands",
+        "linkUrl",
+        "hideLinkMenu",
+        "showLinkMenu",
+        "setLinkUrl"
     ],
 
     components: {
